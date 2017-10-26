@@ -16,12 +16,10 @@ int main() {
 	int n,m;
 	cin>>n>>m;
 	REP(i,n) {
-		int go, so;
-			REP(j,m) {
-			cin>>c;
-			if(c=='G') go = j;
-			if(c=='S') so = j;
-		}
+		string str;
+		cin>>str;
+		int go = str.find('G');
+		int so = str.find('S');
 		if(go>so) {
 			cout<<-1; return 0;
 		}
