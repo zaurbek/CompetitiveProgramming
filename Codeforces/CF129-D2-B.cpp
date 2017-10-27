@@ -1,7 +1,9 @@
-#include <bits/stdc++.h>
+#inlcude <bits/stdc++.h>
 using namespace std;
 #define REP(i,n) for(int i=0; i<n; ++i)
 typedef vector<int> vi;
+
+// some sublime testing
 
 bool g[6000][6000] = {};
 
@@ -15,13 +17,13 @@ vector<pair<int,int>> check() {
             if(g[i][j]) {
                     ++sum;
                     last = j;
+
             }
         }
         if(sum==1) qwe.push_back({i,last});
     }
     return qwe;
 }
-
 
 int main() {
     ios_base::sync_with_stdio(0);
